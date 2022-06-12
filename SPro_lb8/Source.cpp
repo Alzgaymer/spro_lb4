@@ -227,8 +227,7 @@ int doXor(int x, int y)
 }
 int dec2bin(int num) {
 	int N = num, pr;
-		for (int i = 0; i < 32; i++)
-		s[i] = 0;
+	memset(&s, 0, 32);
 
 	__asm {
 	mov eax, num
